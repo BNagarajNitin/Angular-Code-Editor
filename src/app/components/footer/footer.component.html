@@ -1,0 +1,17 @@
+<div class="footer-buttons">
+  <div class="left-buttons" [ngClass]="{'visible': leftButtonsVisible}">
+    <button class="button">Console</button>
+    <button class="button">Assets</button>
+    <button class="button">Comments</button>
+    <button class="button">Shortcuts</button>
+  </div>
+  <button class="up-arrow" (click)="toggleLeftButtons()">
+    <i class="fas" [ngClass]="{'fa-chevron-up': leftButtonsVisible, 'fa-chevron-down': !leftButtonsVisible}"></i>
+  </button>
+  <div class="right-buttons">
+    <button class="button">Fork</button>
+    <button class="button">Embed</button>
+    <button class="button">Export</button>
+    <button class="button">Share</button>
+  </div>
+</div>

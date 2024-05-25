@@ -1,0 +1,177 @@
+
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 0 16px;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand img {
+  height: 70px;
+  width: 90px;
+  margin: 0px;
+}
+.user-name{
+  color: #444857;
+  cursor: pointer;
+}
+
+.user-name:hover{
+  color: white;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-brand{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  height: 40px;
+}
+
+.navbar-buttons .icon-button {
+  background-color: #444857;
+  width: 40px;
+  padding: 0;
+  min-width: 0;
+  border-radius: 5px;
+}
+
+.navbar-buttons .icon-button mat-icon {
+  color: white;
+}
+
+.navbar-buttons .sign-button,
+.navbar-buttons .login-button,
+.navbar-buttons .settings-button {
+  background-color: #444857;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.navbar-buttons .sign-button {
+  background-color: #47CF73;
+}
+.navbar-hamburger{
+  display: none;
+}
+.interesting-section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.settingicon{
+  margin-right: 5px;
+}
+.h1{
+  margin: 0;
+}
+.interesting-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.interesting-text, .user-name {
+  color: white;
+}
+
+.follow-button {
+  background-color: #47CF73;
+  color: black;
+}
+
+@media (max-width: 768px) {
+
+
+  .navbar-buttons {
+    width: 100%;
+
+    gap: 5px;
+  }
+
+  .navbar-buttons button {
+    width: 50%;
+    text-align: left;
+  }
+
+  .interesting-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .interesting-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .follow-button {
+    width: 60%;
+  }
+  .interesting-content,.interesting-text {
+    font-size: smaller;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .navbar-buttons {
+    display: none;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #444857;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  .navbar-hamburger mat-icon {
+    color: white;
+  }
+}
+
+/* @media (max-width: 360px) {
+  .navbar-buttons {
+    display: none;
+  }
+
+
+  .navbar-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #444857;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  .navbar-hamburger mat-icon {
+    color: white;
+  }
+} */
+

@@ -1,0 +1,38 @@
+<nav class="navbar" mat-toolbar color="primary">
+  <div class="navbar-content">
+    <div class="navbar-brand">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.i_dru1zCPy-UcwQfhpOUwAHaFj&pid=Api&P=0&h=180" alt="Codepen Image">
+      <div class="interesting-content">
+        <div class="interesting-text">
+          <h1 class="h1" matTooltip="Interesting Button #7">Interesting Button #7</h1>
+          <span class="user-name" style="margin-top: 0%;">Martin Matovu <button class="follow-button" matTooltip="Follow Martin Matovu">+Follow</button></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hamburger icon for mobile -->
+    <button class="icon-button" (click)="toggleNavbar()" *ngIf="isMobile">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <!-- Navbar buttons -->
+    <div class="navbar-buttons" *ngIf="!isMobile || navbarOpen">
+      <button mat-icon-button class="icon-button favorite-button" matTooltip="love" aria-label="Favorites">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button title="Pen Settings" class="settings-button" data-has-icon="true">
+        <mat-icon class="settingicon">settings</mat-icon>
+        Settings
+      </button>
+      <button mat-icon-button class="icon-button changeview-button" matTooltip="Change View" aria-label="Change View">
+        <mat-icon>view_module</mat-icon>
+      </button>
+      <button mat-button class="sign-button"  aria-label="Signup">
+        Sign Up
+      </button>
+      <button mat-button class="login-button"  aria-label="Login">
+        Log In
+      </button>
+    </div>
+  </div>
+</nav>
